@@ -30,7 +30,7 @@ on top of the [offical](https://hub.docker.com/_/php/) php-fpm container.
 There are different Variants available:
  - [Basic](https://hub.docker.com//r/bettermood/php/)
  
-##Basic Usage
+## Basic Usage
 `docker run -n php -v $PWD:/var/www/html bettermood/php:latest`
 
 ### Compose Usage:
