@@ -29,6 +29,7 @@ on top of the [offical](https://hub.docker.com/_/php/) php-fpm container.
 ## Variants
 There are different Variants available:
  - [Basic](https://hub.docker.com//r/bettermood/php/)
+ - [with xdebug](https://hub.docker.com//r/bettermood/php-xdebug)
  
 ##Basic Usage
 `docker run -n php -v $PWD:/var/www/html bettermood/php:latest`
