@@ -31,6 +31,7 @@ There are different Variants available:
  - [Basic](https://hub.docker.com//r/bettermood/php/)
  - [With mssql support packages](https://hub.docker.com//r/bettermood/php-mssql/)
  - [With Oracle db support packages](https://hub.docker.com//r/bettermood/php-oracle/)
+ - [with xdebug](https://hub.docker.com//r/bettermood/php-xdebug)
  
 ## Basic Usage
 `docker run -n php -v $PWD:/var/www/html bettermood/php:latest`
