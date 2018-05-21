@@ -31,7 +31,7 @@ There are different Variants available:
  - [Basic](https://hub.docker.com//r/bettermood/php/)
  - [With Oracle db support packages](https://hub.docker.com//r/bettermood/php-oracle/)
  
-##Basic Usage
+## Basic Usage
 `docker run -n php -v $PWD:/var/www/html bettermood/php:latest`
 
 ### Compose Usage:
