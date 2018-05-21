@@ -29,6 +29,7 @@ on top of the [offical](https://hub.docker.com/_/php/) php-fpm container.
 ## Variants
 There are different Variants available:
  - [Basic](https://hub.docker.com//r/bettermood/php/)
+ - [With mssql support packages](https://hub.docker.com//r/bettermood/php-mssql/)
  
 ##Basic Usage
 `docker run -n php -v $PWD:/var/www/html bettermood/php:latest`
