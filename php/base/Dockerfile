@@ -48,3 +48,11 @@ RUN pecl clear-cache \
     && rm -rf /var/lib/apt/lists/*
 
 EXPOSE 9000
+
+ENV MOODLE_DOCKER_DATAROOT=/var/www/moodledata \
+    MOODLE_DOCKER_BEHAT_DATAROOT=/var/www/behatdata \
+    MOODLE_DOCKER_PHPUNIT_DATAROOT=/var/www/phpunitdata
+
+RUN mkdir -p $MOODLE_DOCKER_DATAROOT && chown www-data: $MOODLE_DOCKER_DATAROOT -R && chmod 775 $MOODLE_DOCKER_DATAROOT -R \
+    && mkdir -p $MOODLE_DOCKER_BEHAT_DATAROOT && chown www-data: $MOODLE_DOCKER_BEHAT_DATAROOT -R && chmod 775 $MOODLE_DOCKER_BEHAT_DATAROOT -R \
+    && mkdir -p $MOODLE_DOCKER_PHPUNIT_DATAROOT && chown www-data: $MOODLE_DOCKER_PHPUNIT_DATAROOT -R&& chmod 775 $MOODLE_DOCKER_PHPUNIT_DATAROOT -R
