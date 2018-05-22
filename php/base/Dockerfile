@@ -49,6 +49,8 @@ RUN pecl clear-cache \
 
 EXPOSE 9000
 
+RUN sed -ri 's/^www-data:x:33:33:/www-data:x:1000:100:/' /etc/passwd
+
 ENV MOODLE_DOCKER_DATAROOT=/var/www/moodledata \
     MOODLE_DOCKER_BEHAT_DATAROOT=/var/www/behatdata \
     MOODLE_DOCKER_PHPUNIT_DATAROOT=/var/www/phpunitdata
